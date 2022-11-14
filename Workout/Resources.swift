@@ -17,6 +17,7 @@ enum Resources {
     }
     
     enum Strings {
+        
         enum TabBar {
             static let overview = "Overview"
             static let session = "Session"
