@@ -16,6 +16,16 @@ enum Tabs: Int {
 
 final class TabBarController: UITabBarController {
     
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func configure() {
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inactive
@@ -38,6 +48,25 @@ final class TabBarController: UITabBarController {
         let settingsNavigation = UINavigationController(rootViewController: settingsController)
         
         // elements TabBar
+        overviewNavigation.tabBarItem = UITabBarItem(
+            title: Resources.Strings.TabBar.overview,
+            image: Resources.Images.overview,
+            tag: Tabs.overview.rawValue)
+        sessionNavigation.tabBarItem = UITabBarItem(
+            title: Resources.Strings.TabBar.session,
+            image: Resources.Images.session,
+            tag: Tabs.session.rawValue)
+        progressNavigation.tabBarItem = UITabBarItem(
+            title: Resources.Strings.TabBar.progress,
+            image: Resources.Images.progress,
+            tag: Tabs.progress.rawValue)
+        settingsNavigation.tabBarItem = UITabBarItem(
+            title: Resources.Strings.TabBar.settings,
+            image: Resources.Images.settings,
+            tag: Tabs.settings.rawValue)
         
+        setViewControllers([
+            overviewNavigation, sessionNavigation, progressNavigation, settingsNavigation
+        ], animated: true)
     }
 }
