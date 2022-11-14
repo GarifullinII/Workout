@@ -16,5 +16,8 @@ enum Tabs: Int {
 
 final class TabBarController: UITabBarController {
     
-    
+    private func configure() {
+        tabBar.tintColor = Resources.Colors.active
+        tabBar.barTintColor = Resources.Colors.inactive
+    }
 }

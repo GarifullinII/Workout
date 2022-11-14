@@ -13,6 +13,8 @@
 		6EC093AA2921758100E4465E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC093A92921758100E4465E /* Assets.xcassets */; };
 		6EC093AD2921758100E4465E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC093AB2921758100E4465E /* LaunchScreen.storyboard */; };
 		6EC093B72922851D00E4465E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093B62922851D00E4465E /* TabBarController.swift */; };
+		6EC093BB29228E2800E4465E /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093BA29228E2800E4465E /* UIColor+extensions.swift */; };
+		6EC093BD29228EFA00E4465E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093BC29228EFA00E4465E /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6EC093AC2921758100E4465E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EC093AE2921758100E4465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC093B62922851D00E4465E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		6EC093BA29228E2800E4465E /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		6EC093BC29228EFA00E4465E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		6EC0939F2921757F00E4465E /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				6EC093B829228DC800E4465E /* Helpers */,
+				6EC093BC29228EFA00E4465E /* Resources.swift */,
+				6EC093B42921768400E4465E /* Application */,
 				6EC093A42921757F00E4465E /* ViewController.swift */,
 				6EC093B62922851D00E4465E /* TabBarController.swift */,
-				6EC093B42921768400E4465E /* Application */,
 				6EC093B5292176B600E4465E /* SupportingFiles */,
 			);
 			path = Workout;
@@ -81,6 +87,22 @@
 				6EC093AE2921758100E4465E /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6EC093B829228DC800E4465E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6EC093B929228E0000E4465E /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6EC093B929228E0000E4465E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6EC093BA29228E2800E4465E /* UIColor+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +177,8 @@
 			files = (
 				6EC093A52921757F00E4465E /* ViewController.swift in Sources */,
 				6EC093B72922851D00E4465E /* TabBarController.swift in Sources */,
+				6EC093BB29228E2800E4465E /* UIColor+extensions.swift in Sources */,
+				6EC093BD29228EFA00E4465E /* Resources.swift in Sources */,
 				6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */,
 				6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */,
 			);
