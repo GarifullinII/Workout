@@ -15,4 +15,20 @@ enum Resources {
         
         static var separator = UIColor(hexString: "#E8ECEF")
     }
+    
+    enum Strings {
+        enum TabBat {
+            static var overview = "Overview"
+            static var session = "Session"
+            static var progress = "Progress"
+            static var settings = "Settings"
+        }
+    }
+    
+    enum Images {
+        static var overview = UIImage(named: "overview")
+        static var session = UIImage(named: "session")
+        static var progress = UIImage(named: "progress")
+        static var settings = UIImage(named: "settings")
+    }
 }
