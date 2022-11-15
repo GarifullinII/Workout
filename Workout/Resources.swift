@@ -9,11 +9,19 @@ import UIKit
 
 enum Resources {
     
+    // colors active and inactive TabBar
     enum Colors {
         static let active = UIColor(hexString: "#437BFE")
         static let inactive = UIColor(hexString: "#929DA5")
         
+        // color background NavBar
+        static let background = UIColor(hexString: "#F8F9F9")
+        
+        // color for border TabBar
         static let separator = UIColor(hexString: "#E8ECEF")
+        
+        // color for text NavBar
+        static let titleGray = UIColor(hexString: "#545C77")
     }
     
     enum Strings {
@@ -31,5 +39,11 @@ enum Resources {
         static let session = UIImage(named: "session")
         static let progress = UIImage(named: "progress")
         static let settings = UIImage(named: "settings")
+    }
+    
+    enum Fonts {
+        static func helvelticaRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
     }
 }

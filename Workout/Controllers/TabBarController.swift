@@ -43,10 +43,10 @@ final class TabBarController: UITabBarController {
         let settingsController = UIViewController()
         
         // navigation controllers elements TabBar
-        let overviewNavigation = UINavigationController(rootViewController: overviewController)
-        let sessionNavigation = UINavigationController(rootViewController: sessionController)
-        let progressNavigation = UINavigationController(rootViewController: progressController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
+        let settingsNavigation = NavBarController(rootViewController: settingsController)
         
         // elements TabBar
         overviewNavigation.tabBarItem = UITabBarItem(
@@ -68,6 +68,6 @@ final class TabBarController: UITabBarController {
         
         setViewControllers([
             overviewNavigation, sessionNavigation, progressNavigation, settingsNavigation
-        ], animated: true)
+        ], animated: false)
     }
 }
