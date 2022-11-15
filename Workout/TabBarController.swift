@@ -26,6 +26,7 @@ final class TabBarController: UITabBarController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // create TabBar
     private func configure() {
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inactive
@@ -35,13 +36,13 @@ final class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        // controllers for TabBar
+        // controllers TabBar
         let overviewController = UIViewController()
         let sessionController = UIViewController()
         let progressController = UIViewController()
         let settingsController = UIViewController()
         
-        // navigation controllers for elements TabBar
+        // navigation controllers elements TabBar
         let overviewNavigation = UINavigationController(rootViewController: overviewController)
         let sessionNavigation = UINavigationController(rootViewController: sessionController)
         let progressNavigation = UINavigationController(rootViewController: progressController)
