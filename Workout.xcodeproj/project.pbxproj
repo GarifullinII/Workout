@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A02921757F00E4465E /* AppDelegate.swift */; };
 		6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A22921757F00E4465E /* SceneDelegate.swift */; };
-		6EC093A52921757F00E4465E /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A42921757F00E4465E /* OverViewController.swift */; };
 		6EC093AA2921758100E4465E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC093A92921758100E4465E /* Assets.xcassets */; };
 		6EC093AD2921758100E4465E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC093AB2921758100E4465E /* LaunchScreen.storyboard */; };
 		6EC093B72922851D00E4465E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093B62922851D00E4465E /* TabBarController.swift */; };
@@ -17,6 +16,11 @@
 		6EC093BD29228EFA00E4465E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093BC29228EFA00E4465E /* Resources.swift */; };
 		6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */; };
 		6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA73292407B600AD0FA5 /* BaseController.swift */; };
+		6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA752924E98600AD0FA5 /* UIView+extensions.swift */; };
+		6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA7D2924ED3500AD0FA5 /* OverviewController.swift */; };
+		6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */; };
+		6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */; };
+		6EDEBA842924EDC200AD0FA5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */; };
 		7E5D92B304449164F3DD156F /* Pods_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4552B4A7B334C456044465 /* Pods_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +29,6 @@
 		6EC0939D2921757F00E4465E /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC093A02921757F00E4465E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EC093A22921757F00E4465E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6EC093A42921757F00E4465E /* OverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
 		6EC093A92921758100E4465E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EC093AC2921758100E4465E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EC093AE2921758100E4465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +37,11 @@
 		6EC093BC29228EFA00E4465E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		6EDEBA73292407B600AD0FA5 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		6EDEBA752924E98600AD0FA5 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		6EDEBA7D2924ED3500AD0FA5 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D5DECB7BBB31BAE44C6BE4CE /* Pods-Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.release.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.release.xcconfig"; sourceTree = "<group>"; };
 		EFA30F45D41802F878F7761E /* Pods-Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.debug.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +82,6 @@
 				6EC093B829228DC800E4465E /* Helpers */,
 				6EC093BC29228EFA00E4465E /* Resources.swift */,
 				6EC093B42921768400E4465E /* Application */,
-				6EC093A42921757F00E4465E /* OverViewController.swift */,
 				6EC093B5292176B600E4465E /* SupportingFiles */,
 				6EDEBA722924078B00AD0FA5 /* Controllers */,
 			);
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				6EC093BA29228E2800E4465E /* UIColor+extensions.swift */,
+				6EDEBA752924E98600AD0FA5 /* UIView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,11 +127,55 @@
 		6EDEBA722924078B00AD0FA5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6EDEBA772924EBD700AD0FA5 /* Base */,
+				6EDEBA792924EC2200AD0FA5 /* Overview */,
+				6EDEBA7A2924EC3000AD0FA5 /* Session */,
+				6EDEBA7B2924EC3B00AD0FA5 /* Progress */,
+				6EDEBA7C2924EC4500AD0FA5 /* Settings */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6EDEBA772924EBD700AD0FA5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
 				6EC093B62922851D00E4465E /* TabBarController.swift */,
 				6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */,
 				6EDEBA73292407B600AD0FA5 /* BaseController.swift */,
 			);
-			path = Controllers;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6EDEBA792924EC2200AD0FA5 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				6EDEBA7D2924ED3500AD0FA5 /* OverviewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		6EDEBA7A2924EC3000AD0FA5 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		6EDEBA7B2924EC3B00AD0FA5 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		6EDEBA7C2924EC4500AD0FA5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		C534EBB482168C2A5D13E504 /* Pods */ = {
@@ -257,12 +309,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC093A52921757F00E4465E /* OverViewController.swift in Sources */,
+				6EDEBA842924EDC200AD0FA5 /* SettingsController.swift in Sources */,
 				6EC093B72922851D00E4465E /* TabBarController.swift in Sources */,
 				6EC093BB29228E2800E4465E /* UIColor+extensions.swift in Sources */,
 				6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */,
 				6EC093BD29228EFA00E4465E /* Resources.swift in Sources */,
+				6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */,
+				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
+				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
 				6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */,
+				6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */,
 				6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */,
 				6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */,
 			);
