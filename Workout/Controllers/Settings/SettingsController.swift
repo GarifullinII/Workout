@@ -12,5 +12,6 @@ class SettingsController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        self.title = "Settings"
     }
 }
