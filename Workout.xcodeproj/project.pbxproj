@@ -22,6 +22,7 @@
 		6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */; };
 		6EDEBA842924EDC200AD0FA5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */; };
 		6EDEBAA829264D2B00AD0FA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6EDEBAA729264D2B00AD0FA5 /* README.md */; };
+		6EDEBAAB292655A600AD0FA5 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */; };
 		7E5D92B304449164F3DD156F /* Pods_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4552B4A7B334C456044465 /* Pods_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		6EDEBAA729264D2B00AD0FA5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		D5DECB7BBB31BAE44C6BE4CE /* Pods-Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.release.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.release.xcconfig"; sourceTree = "<group>"; };
 		EFA30F45D41802F878F7761E /* Pods-Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.debug.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 		6EDEBA792924EC2200AD0FA5 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				6EDEBAA92926554D00AD0FA5 /* Views */,
 				6EDEBA7D2924ED3500AD0FA5 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -179,6 +182,14 @@
 				6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		6EDEBAA92926554D00AD0FA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C534EBB482168C2A5D13E504 /* Pods */ = {
@@ -319,6 +330,7 @@
 				6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */,
 				6EC093BD29228EFA00E4465E /* Resources.swift in Sources */,
 				6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */,
+				6EDEBAAB292655A600AD0FA5 /* SecondaryButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
 				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
 				6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */,
