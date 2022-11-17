@@ -63,6 +63,7 @@
 		6EC093942921757F00E4465E = {
 			isa = PBXGroup;
 			children = (
+				6EDEBAA729264D2B00AD0FA5 /* README.md */,
 				6EC0939F2921757F00E4465E /* Workout */,
 				6EC0939E2921757F00E4465E /* Products */,
 				C534EBB482168C2A5D13E504 /* Pods */,
@@ -81,7 +82,6 @@
 		6EC0939F2921757F00E4465E /* Workout */ = {
 			isa = PBXGroup;
 			children = (
-				6EDEBAA729264D2B00AD0FA5 /* README.md */,
 				6EC093B829228DC800E4465E /* Helpers */,
 				6EC093BC29228EFA00E4465E /* Resources.swift */,
 				6EC093B42921768400E4465E /* Application */,
