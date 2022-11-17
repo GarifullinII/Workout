@@ -32,6 +32,12 @@ enum Resources {
             static let progress = "Progress"
             static let settings = "Settings"
         }
+        
+        enum NavBar {
+            static let session = "High Intensity Cardio"
+            static let progress = "Workout Progress"
+            static let settings = "Settings"
+        }
     }
     
     enum Images {
