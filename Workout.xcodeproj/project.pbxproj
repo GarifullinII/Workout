@@ -21,6 +21,7 @@
 		6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */; };
 		6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */; };
 		6EDEBA842924EDC200AD0FA5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */; };
+		6EDEBAA829264D2B00AD0FA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6EDEBAA729264D2B00AD0FA5 /* README.md */; };
 		7E5D92B304449164F3DD156F /* Pods_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4552B4A7B334C456044465 /* Pods_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		6EDEBA812924ED9B00AD0FA5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		6EDEBA832924EDC200AD0FA5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		6EDEBAA729264D2B00AD0FA5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5DECB7BBB31BAE44C6BE4CE /* Pods-Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.release.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.release.xcconfig"; sourceTree = "<group>"; };
 		EFA30F45D41802F878F7761E /* Pods-Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.debug.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 		6EC0939F2921757F00E4465E /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				6EDEBAA729264D2B00AD0FA5 /* README.md */,
 				6EC093B829228DC800E4465E /* Helpers */,
 				6EC093BC29228EFA00E4465E /* Resources.swift */,
 				6EC093B42921768400E4465E /* Application */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDEBAA829264D2B00AD0FA5 /* README.md in Resources */,
 				6EC093AD2921758100E4465E /* LaunchScreen.storyboard in Resources */,
 				6EC093AA2921758100E4465E /* Assets.xcassets in Resources */,
 			);
