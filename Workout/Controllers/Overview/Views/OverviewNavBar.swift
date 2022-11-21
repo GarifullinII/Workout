@@ -38,10 +38,10 @@ extension OverviewNavBar {
     override func addView() {
         super.addView()
         
-        addSubview(titleLabel)
-        addSubview(allWorkoutsButton)
-        addSubview(addButton)
-        addSubview(weekView)
+        addView(titleLabel)
+        addView(allWorkoutsButton)
+        addView(addButton)
+        addView(weekView)
     }
     
     override func layoutViews() {
@@ -75,17 +75,14 @@ extension OverviewNavBar {
         
         backgroundColor = .white
         
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = Resources.Strings.NavBar.overview
         titleLabel.textColor = Resources.Colors.titleGray
         titleLabel.font = Resources.Fonts.helvelticaRegular(with: 22)
         
-        allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
+
         allWorkoutsButton.setTilte(Resources.Strings.Overview.allWorcoutsButton)
         
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.setImage(Resources.Images.Common.add, for: .normal)
-        
-        weekView.translatesAutoresizingMaskIntoConstraints = false
     }
 }
