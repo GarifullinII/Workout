@@ -13,6 +13,13 @@ final class OverviewNavBar: BaseView {
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
     
+    private let weekView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .blue.withAlphaComponent(0.2)
+        
+        return view
+    }()
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -34,6 +41,7 @@ extension OverviewNavBar {
         addSubview(titleLabel)
         addSubview(allWorkoutsButton)
         addSubview(addButton)
+        addSubview(weekView)
     }
     
     override func layoutViews() {
@@ -52,7 +60,13 @@ extension OverviewNavBar {
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15)
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            
+            weekView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 15),
+            weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
+            weekView.heightAnchor.constraint(equalToConstant: 47)
         ])
     }
     
@@ -71,5 +85,7 @@ extension OverviewNavBar {
         
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.setImage(Resources.Images.Common.add, for: .normal)
+        
+        weekView.translatesAutoresizingMaskIntoConstraints = false
     }
 }
