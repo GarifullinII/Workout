@@ -36,7 +36,7 @@ enum Resources {
         }
         
         enum NavBar {
-            static let overview = ""
+            static let overview = "Today"
             static let session = "High Intensity Cardio"
             static let progress = "Workout Progress"
             static let settings = "Settings"

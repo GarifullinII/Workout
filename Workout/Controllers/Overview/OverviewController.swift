@@ -11,9 +11,9 @@ class OverviewController: BaseController {
     
     private let navBar = OverviewNavBar()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
 }
 
 extension OverviewController {
@@ -37,6 +37,7 @@ extension OverviewController {
     override func configure() {
         super.configure()
         
+        navigationController?.navigationBar.isHidden = true
         navBar.translatesAutoresizingMaskIntoConstraints = false
     }
 }
