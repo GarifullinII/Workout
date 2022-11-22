@@ -25,6 +25,7 @@
 		6EDEBAAB292655A600AD0FA5 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */; };
 		6EEDA4F12927DCF0000EFB97 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F02927DCF0000EFB97 /* OverviewNavBar.swift */; };
 		6EEDA4F32927E70E000EFB97 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F22927E70E000EFB97 /* BaseView.swift */; };
+		6EEDA4F6292CFF6D000EFB97 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F5292CFF6D000EFB97 /* WeekView.swift */; };
 		7E5D92B304449164F3DD156F /* Pods_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4552B4A7B334C456044465 /* Pods_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		6EEDA4F02927DCF0000EFB97 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		6EEDA4F22927E70E000EFB97 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6EEDA4F5292CFF6D000EFB97 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		D5DECB7BBB31BAE44C6BE4CE /* Pods-Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.release.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.release.xcconfig"; sourceTree = "<group>"; };
 		EFA30F45D41802F878F7761E /* Pods-Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.debug.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,10 +194,19 @@
 		6EDEBAA92926554D00AD0FA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6EEDA4F4292CFF52000EFB97 /* WeekView */,
 				6EDEBAAA292655A600AD0FA5 /* SecondaryButton.swift */,
 				6EEDA4F02927DCF0000EFB97 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6EEDA4F4292CFF52000EFB97 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				6EEDA4F5292CFF6D000EFB97 /* WeekView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 		C534EBB482168C2A5D13E504 /* Pods */ = {
@@ -330,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EEDA4F6292CFF6D000EFB97 /* WeekView.swift in Sources */,
 				6EDEBA842924EDC200AD0FA5 /* SettingsController.swift in Sources */,
 				6EC093B72922851D00E4465E /* TabBarController.swift in Sources */,
 				6EEDA4F12927DCF0000EFB97 /* OverviewNavBar.swift in Sources */,
