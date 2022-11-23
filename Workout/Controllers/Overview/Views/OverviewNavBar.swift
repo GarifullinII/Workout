@@ -29,8 +29,8 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addView() {
-        super.addView()
+    override func setupViews() {
+        super.setupViews()
         
         addView(titleLabel)
         addView(allWorkoutsButton)
@@ -38,8 +38,8 @@ extension OverviewNavBar {
         addView(weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintsViews() {
+        super.constraintsViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -64,8 +64,8 @@ extension OverviewNavBar {
         ])
     }
     
-    override func configureView() {
-        super.configureView()
+    override func configureAppearance() {
+        super.configureAppearance()
         
         backgroundColor = .white
         
