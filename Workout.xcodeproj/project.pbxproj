@@ -28,6 +28,7 @@
 		6EEDA4F6292CFF6D000EFB97 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F5292CFF6D000EFB97 /* WeekView.swift */; };
 		6EEDA4F8292D0367000EFB97 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F7292D0367000EFB97 /* WeekDayView.swift */; };
 		6EEDA4FA292D0956000EFB97 /* Date+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDA4F9292D0956000EFB97 /* Date+extensions.swift */; };
+		6EFDBCCC292E921B00677A39 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDBCCB292E921B00677A39 /* BaseInfoView.swift */; };
 		7E5D92B304449164F3DD156F /* Pods_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4552B4A7B334C456044465 /* Pods_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		6EEDA4F5292CFF6D000EFB97 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		6EEDA4F7292D0367000EFB97 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		6EEDA4F9292D0956000EFB97 /* Date+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extensions.swift"; sourceTree = "<group>"; };
+		6EFDBCCB292E921B00677A39 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		D5DECB7BBB31BAE44C6BE4CE /* Pods-Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.release.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.release.xcconfig"; sourceTree = "<group>"; };
 		EFA30F45D41802F878F7761E /* Pods-Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout.debug.xcconfig"; path = "Target Support Files/Pods-Workout/Pods-Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,10 +157,10 @@
 		6EDEBA772924EBD700AD0FA5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDBCCA292E91F200677A39 /* BaseViews */,
 				6EC093B62922851D00E4465E /* TabBarController.swift */,
 				6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */,
 				6EDEBA73292407B600AD0FA5 /* BaseController.swift */,
-				6EEDA4F22927E70E000EFB97 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -213,6 +215,15 @@
 				6EEDA4F7292D0367000EFB97 /* WeekDayView.swift */,
 			);
 			path = WeekView;
+			sourceTree = "<group>";
+		};
+		6EFDBCCA292E91F200677A39 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				6EEDA4F22927E70E000EFB97 /* BaseView.swift */,
+				6EFDBCCB292E921B00677A39 /* BaseInfoView.swift */,
+			);
+			path = BaseViews;
 			sourceTree = "<group>";
 		};
 		C534EBB482168C2A5D13E504 /* Pods */ = {
@@ -356,6 +367,7 @@
 				6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */,
 				6EC093BD29228EFA00E4465E /* Resources.swift in Sources */,
 				6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */,
+				6EFDBCCC292E921B00677A39 /* BaseInfoView.swift in Sources */,
 				6EDEBAAB292655A600AD0FA5 /* SecondaryButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
 				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
