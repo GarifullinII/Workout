@@ -17,12 +17,7 @@ class BaseInfoView: BaseView {
         return label
     }()
     
-    private let button: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .red
-        
-        return button
-    }()
+    private let button = MainButton(with: .primary)
     
     private let contentView: UIView = {
         let view = UIView()
@@ -38,7 +33,7 @@ class BaseInfoView: BaseView {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         
-        button.setTitle(buttonTitle, for: .normal)
+        button.setTilte(buttonTitle)
         button.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
@@ -75,8 +70,7 @@ extension BaseInfoView {
             
             button.trailingAnchor.constraint(equalTo: trailingAnchor),
             button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            button.widthAnchor.constraint(equalToConstant: 130),
-            button.heightAnchor.constraint(equalToConstant: 32),
+            button.heightAnchor.constraint(equalToConstant: 28),
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
