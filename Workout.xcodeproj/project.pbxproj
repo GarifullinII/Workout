@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EAE233129314D950062CA60 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE233029314D950062CA60 /* TimerView.swift */; };
 		6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A02921757F00E4465E /* AppDelegate.swift */; };
 		6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A22921757F00E4465E /* SceneDelegate.swift */; };
 		6EC093AA2921758100E4465E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC093A92921758100E4465E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		5F4552B4A7B334C456044465 /* Pods_Workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAE233029314D950062CA60 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6EC0939D2921757F00E4465E /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC093A02921757F00E4465E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EC093A22921757F00E4465E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EAE232F29314D600062CA60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EAE233029314D950062CA60 /* TimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6EC093942921757F00E4465E = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		6EDEBA7A2924EC3000AD0FA5 /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				6EAE232F29314D600062CA60 /* Views */,
 				6EDEBA7F2924ED6500AD0FA5 /* SessionController.swift */,
 			);
 			path = Session;
@@ -368,6 +379,7 @@
 				6EC093BD29228EFA00E4465E /* Resources.swift in Sources */,
 				6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */,
 				6EFDBCCC292E921B00677A39 /* BaseInfoView.swift in Sources */,
+				6EAE233129314D950062CA60 /* TimerView.swift in Sources */,
 				6EDEBAAB292655A600AD0FA5 /* MainButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
 				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
