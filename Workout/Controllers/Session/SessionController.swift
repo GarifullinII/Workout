@@ -8,8 +8,8 @@
 import UIKit
 
 class SessionController: BaseController {
-    private let timerView: BaseInfoView = {
-        let view = BaseInfoView(with: "Test", buttonTitle: "Test button")
+    private let timerView: TimerView = {
+        let view = TimerView()
 
         return view
     }()
@@ -27,7 +27,7 @@ extension SessionController {
         
         NSLayoutConstraint.activate([
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant:  15),
+            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             timerView.heightAnchor.constraint(equalToConstant: 300)
         ])
