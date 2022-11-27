@@ -10,7 +10,7 @@ import Foundation
 extension Date {
     static var calendar: Calendar = {
         var calendar = Calendar(identifier: .gregorian)
-        calendar.firstWeekday
+        calendar.firstWeekday = 2
         return calendar
     }()
     
