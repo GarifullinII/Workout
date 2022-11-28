@@ -10,7 +10,10 @@ import UIKit
 extension TimerView {
     final class ProgressView: UIView {
         func drawProgress(with percent: CGFloat) {
-            let circleFrame = UIScreen.main.bounds.width - (15 + 40)*2
+            layer.sublayers?.removeAll()
+            
+            // MARK: - Circle
+            let circleFrame = UIScreen.main.bounds.width - (15 + 40) * 2
             let radius = circleFrame / 2
             let center = CGPoint(x: radius, y: radius)
             let startAngle = -CGFloat.pi * 7 / 6
@@ -39,9 +42,10 @@ extension TimerView {
             circleLayer.fillColor = UIColor.clear.cgColor
             circleLayer.lineCap = .round
             
+            // MARK: - Dot
             let dotAngle = CGFloat.pi * (7 / 6 - (8 / 6 * percent))
             let dotPoint = CGPoint(x: cos(-dotAngle) * radius + center.x,
-                                        y: sin(-dotAngle) * radius + center.y)
+                                   y: sin(-dotAngle) * radius + center.y)
             
             let dotPath = UIBezierPath()
             dotPath.move(to: dotPoint)
@@ -61,10 +65,62 @@ extension TimerView {
             dotLayer.lineCap = .round
             dotLayer.lineWidth = 8
             
+            // MARK: - Bars
+            let barsFrame = UIScreen.main.bounds.width - (15 + 40 + 25) * 2
+            let barsRadius = barsFrame / 2
+            
+            let barsPath = UIBezierPath(arcCenter: center,
+                                        radius: barsRadius,
+                                        startAngle: startAngle,
+                                        endAngle: endAngle,
+                                        clockwise: true)
+            
+            let barsLayer = CAShapeLayer()
+            barsLayer.path = barsPath.cgPath
+            barsLayer.fillColor = UIColor.clear.cgColor
+            barsLayer.strokeColor = UIColor.clear.cgColor
+            barsLayer.lineWidth = 6
+            
+            let startBarRadius = barsRadius - barsLayer.lineWidth * 0.5
+            let endBarRadius = startBarRadius + 6
+            
+            var angle: CGFloat = 7 / 6
+            (1...9).forEach { _ in
+                let barAngle = CGFloat.pi * angle
+                let startBarPoint = CGPoint(
+                    x: cos(-barAngle) * startBarRadius + center.x,
+                    y: sin(-barAngle) * startBarRadius + center.y
+                )
+                
+                let endBarPoint = CGPoint(
+                    x: cos(-barAngle) * endBarRadius + center.x,
+                    y: sin(-barAngle) * endBarRadius + center.y
+                )
+                
+                let barPath = UIBezierPath()
+                barPath.move(to: startBarPoint)
+                barPath.addLine(to: endBarPoint)
+                
+                let barLayer = CAShapeLayer()
+                barLayer.path = barPath.cgPath
+                barLayer.fillColor = UIColor.clear.cgColor
+                barLayer.strokeColor = angle >=
+                (7 / 6 - (8 / 6 * percent)) ?
+                Resources.Colors.active.cgColor :
+                Resources.Colors.separator.cgColor
+                barLayer.lineCap = .round
+                barLayer.lineWidth = 4
+                
+                barsLayer.addSublayer(barLayer)
+                
+                angle -= 1 / 6
+            }
+            
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
             layer.addSublayer(bigDotLayer)
             layer.addSublayer(dotLayer)
+            layer.addSublayer(barsLayer)
         }
     }
 }
