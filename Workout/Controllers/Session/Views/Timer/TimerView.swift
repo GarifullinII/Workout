@@ -15,6 +15,53 @@ enum TimerState {
 
 final class TimerView: BaseInfoView {
     
+    private let elapsedTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.Session.elapsedTime
+        label.font = Resources.Fonts.helvelticaRegular(with: 14)
+        label.textColor = Resources.Colors.inactive
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    private let elapsedTimeValueLabel: UILabel = {
+        let label = UILabel()
+        label.font = Resources.Fonts.helvelticaRegular(with: 46)
+        label.textColor = Resources.Colors.titleGray
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    private let remainingTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.Session.remainingTime
+        label.font = Resources.Fonts.helvelticaRegular(with: 13)
+        label.textColor = Resources.Colors.inactive
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    private let remainingTimeValueLabel: UILabel = {
+        let label = UILabel()
+        label.font = Resources.Fonts.helvelticaRegular(with: 13)
+        label.textColor = Resources.Colors.titleGray
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    private let timeStackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .vertical
+        view.distribution = .fillProportionally
+        view.spacing = 10
+        
+        return view
+    }()
+    
     private let progressView = ProgressView()
     
     private var timer = Timer()
@@ -33,6 +80,29 @@ final class TimerView: BaseInfoView {
         
         progressView.drawProgress(with: CGFloat(percent))
     }
+    
+    func startTimer() {
+        timer.invalidate()
+        
+        timer = Timer.scheduledTimer(
+            withTimeInterval: 0.01,
+            repeats: true,
+            block: { [weak self] timer in
+                guard let self = self else { return }
+                self.timerProgress += 0.01
+                
+                if self.timerProgress > self.timerDuration {
+                    self.timerProgress = self.timerDuration
+                    timer.invalidate()
+                }
+                
+                self.configure(
+                    with: self.timerDuration,
+                    progress: self.timerProgress)
+            })
+    }
+    
+    
     
 //    private var progressView: ProgressView = {
 //        let view = ProgressView()

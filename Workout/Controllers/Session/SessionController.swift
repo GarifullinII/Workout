@@ -39,8 +39,8 @@ extension SessionController {
         self.title = Resources.Strings.NavBar.session
         navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .session)
         
-        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
-        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarPause)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarFinish)
     }
 
     override func navBarLeftButtonHandler() {
