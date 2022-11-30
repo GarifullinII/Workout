@@ -7,13 +7,38 @@
 
 import UIKit
 
+enum TimerState {
+    case isRuning
+    case isPaused
+    case isStopped
+}
+
 final class TimerView: BaseInfoView {
     
-    private var progressView: ProgressView = {
-        let view = ProgressView()
-        view.drawProgress(with: 1.0)
-        return view
-    }()
+    private let progressView = ProgressView()
+    
+    private var timer = Timer()
+    private var timerProgress: CGFloat = 0
+    private var timerDuration = 0.0
+    
+    var state: TimerState = .isStopped
+    
+    func configure(with duration: Double, progress: Double) {
+        timerDuration = duration
+        
+        let tempCurrentValue = progress > duration ? duration : progress
+        
+        let goalValueDevider = duration == 0 ? 1 : duration
+        let percent = tempCurrentValue / goalValueDevider
+        
+        progressView.drawProgress(with: CGFloat(percent))
+    }
+    
+//    private var progressView: ProgressView = {
+//        let view = ProgressView()
+//        view.drawProgress(with: 1.0)
+//        return view
+//    }()
 }
 
 extension TimerView {
