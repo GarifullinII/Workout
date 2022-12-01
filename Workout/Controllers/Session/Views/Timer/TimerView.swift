@@ -102,7 +102,31 @@ final class TimerView: BaseInfoView {
             })
     }
     
+    func pauseTimer() {
+        timer.invalidate()
+    }
     
+    func stopTimer() {
+        guard self.timerProgress > 0 else { return }
+        timer.invalidate()
+        
+        timer = Timer.scheduledTimer(
+            withTimeInterval: 0.01,
+            repeats: true,
+            block: { [weak self] timer in
+                guard let self = self else { return }
+                self.timerProgress -= 0.1
+                
+                if self.timerProgress <= 0 {
+                    self.timerProgress = 0
+                    timer.invalidate()
+                }
+                
+                self.configure(
+                    with: self.timerDuration,
+                    progress: self.timerProgress)
+            })
+    }
     
 //    private var progressView: ProgressView = {
 //        let view = ProgressView()
