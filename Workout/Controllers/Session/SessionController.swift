@@ -8,11 +8,38 @@
 import UIKit
 
 class SessionController: BaseController {
-    private let timerView: TimerView = {
-        let view = TimerView()
-
-        return view
-    }()
+    private let timerView = TimerView()
+    
+    private let timerDuration = 3.0
+    
+    override func navBarLeftButtonHandler() {
+        if timerView.state == .isStopped {
+            timerView.startTimer {
+                DispatchQueue.main.asyncAfter(
+                    deadline: .now() + 1) {
+                        self.navBarRightButtonHandler()
+                    }
+            }
+        } else {
+            timerView.pauseTimer()
+        }
+        
+        timerView.state = timerView.state == .isRuning ? .isStopped : .isRuning
+        addNavBarButton(
+            at: .left,
+            with: timerView.state == .isRuning
+            ? Resources.Strings.Session.navBarPause
+            : Resources.Strings.Session.navBarStart
+        )
+        
+    }
+    
+    override func navBarRightButtonHandler() {
+        timerView.stopTimer()
+        timerView.state = .isStopped
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarStart)
+    }
 }
 
 extension SessionController {
@@ -28,8 +55,7 @@ extension SessionController {
         NSLayoutConstraint.activate([
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 500)
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
         ])
     }
     
@@ -39,15 +65,16 @@ extension SessionController {
         self.title = Resources.Strings.NavBar.session
         navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .session)
         
-        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarPause)
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarStart)
         addNavBarButton(at: .right, with: Resources.Strings.Session.navBarFinish)
-    }
-
-    override func navBarLeftButtonHandler() {
-        print("Session NavBar left button tapped")
-    }
-    
-    override func navBarRightButtonHandler() {
-        print("Session NavBar right button tapped")
+        
+        timerView.configure(with: timerDuration, progress: 0)
+        
+        timerView.callBack = {
+            DispatchQueue.main.asyncAfter(
+                deadline: .now() + 1) {
+                    self.navBarRightButtonHandler()
+                }
+        }
     }
 }
