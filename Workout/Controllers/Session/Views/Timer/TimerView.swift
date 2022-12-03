@@ -27,7 +27,6 @@ final class TimerView: BaseInfoView {
     
     private let elapsedTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "02:15"
         label.font = Resources.Fonts.helvelticaRegular(with: 46)
         label.textColor = Resources.Colors.titleGray
         label.textAlignment = .center
@@ -47,7 +46,6 @@ final class TimerView: BaseInfoView {
     
     private let remainingTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.text = "12:45"
         label.font = Resources.Fonts.helvelticaRegular(with: 13)
         label.textColor = Resources.Colors.titleGray
         label.textAlignment = .center
@@ -60,6 +58,14 @@ final class TimerView: BaseInfoView {
         view.axis = .vertical
         view.distribution = .fillProportionally
         view.spacing = 10
+        
+        return view
+    }()
+    
+    private let bottomStackView: UIStackView = {
+        let view = UIStackView()
+        view.distribution = .fillProportionally
+        view.spacing = 25
         
         return view
     }()
@@ -80,6 +86,9 @@ final class TimerView: BaseInfoView {
         
         let goalValueDevider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDevider
+        
+        elapsedTimeValueLabel.text = getDisplayedString(from: Int(tempCurrentValue))
+        remainingTimeValueLabel.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
         
         progressView.drawProgress(with: CGFloat(percent))
     }
@@ -120,7 +129,7 @@ final class TimerView: BaseInfoView {
             repeats: true,
             block: { [weak self] timer in
                 guard let self = self else { return }
-                self.timerProgress -= 0.1
+                self.timerProgress -= self.timerDuration * 0.01
                 
                 if self.timerProgress <= 0 {
                     self.timerProgress = 0
@@ -169,5 +178,21 @@ extension TimerView {
     
     override func configureAppearance() {
         super.configureAppearance()
+    }
+}
+
+private extension TimerView {
+    func getDisplayedString(from value: Int) -> String {
+        let seconds = value % 60
+        let minutes = (value / 60) % 60
+        let hours = value / 3600
+
+        let secondsStr = seconds < 10 ? "0\(seconds)" : "\(seconds)"
+        let minutesStr = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        let hoursStr = hours < 10 ? "0\(hours)" : "\(hours)"
+
+        return hours == 0
+            ? [minutesStr, secondsStr].joined(separator: ":")
+            : [hoursStr, minutesStr, secondsStr].joined(separator: ":")
     }
 }
