@@ -24,6 +24,7 @@ enum Resources {
         
         // color for text NavBar
         static let titleGray = UIColor(hexString: "#545C77")
+        static let subTitleGray = UIColor(hexString: "#D8D8D8")
     }
     
     enum Strings {
