@@ -70,6 +70,16 @@ final class TimerView: BaseInfoView {
         return view
     }()
     
+    private let completedPercentView = PercentView()
+    private let remainingPercentView = PercentView()
+    
+    private let bottomSeparatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = Resources.Colors.separator
+        
+        return view
+    }()
+    
     private let progressView = ProgressView()
     
     private var timer = Timer()
@@ -86,10 +96,12 @@ final class TimerView: BaseInfoView {
         
         let goalValueDevider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDevider
+        let roundedPercent = Int(round(percent * 100))
         
         elapsedTimeValueLabel.text = getDisplayedString(from: Int(tempCurrentValue))
         remainingTimeValueLabel.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
-        
+        completedPercentView.configure(with: "COMPLETED", andValue: roundedPercent)
+        remainingPercentView.configure(with: "REMAINING", andValue: 100 - roundedPercent)
         progressView.drawProgress(with: CGFloat(percent))
     }
     
@@ -150,6 +162,7 @@ extension TimerView {
         
         setupView(progressView)
         setupView(timeStackView)
+        setupView(bottomStackView)
         
         [
             elapsedTimeLabel,
@@ -158,6 +171,14 @@ extension TimerView {
             remainingTimeValueLabel
         ].forEach {
             timeStackView.addArrangedSubview($0)
+        }
+        
+        [
+            completedPercentView,
+            bottomSeparatorView,
+            remainingPercentView
+        ].forEach {
+            bottomStackView.addArrangedSubview($0)
         }
     }
     
@@ -172,7 +193,14 @@ extension TimerView {
             progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
             
             timeStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor),
-            timeStackView.centerXAnchor.constraint(equalTo: progressView.centerXAnchor)
+            timeStackView.centerXAnchor.constraint(equalTo: progressView.centerXAnchor),
+            
+            bottomStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
+            bottomStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            bottomStackView.heightAnchor.constraint(equalToConstant: 35),
+            bottomStackView.widthAnchor.constraint(equalToConstant: 175),
+            
+            bottomSeparatorView.widthAnchor.constraint(equalToConstant: 1)
         ])
     }
     
