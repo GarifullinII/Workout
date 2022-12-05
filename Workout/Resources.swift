@@ -94,6 +94,15 @@ enum Resources {
             static let downArrow = UIImage(named: "down_arrow")
             static let add = UIImage(named: "add_button")
         }
+        
+        enum Session {
+                    enum Stats {
+                        static let averagePace = UIImage(named: "speed")
+                        static let heartRate = UIImage(named: "heart")
+                        static let totalDistance = UIImage(named: "maps")
+                        static let totalSteps = UIImage(named: "steps")
+                    }
+                }
     }
     
     enum Fonts {
