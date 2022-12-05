@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E38DB4E293BD9B400927D41 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E38DB4D293BD9B400927D41 /* PercentView.swift */; };
+		6E3F9F35293E27800052856A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F9F34293E27800052856A /* StatsView.swift */; };
+		6E3F9F38293E28050052856A /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F9F37293E28050052856A /* StatsItemView.swift */; };
 		6EAE233129314D950062CA60 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE233029314D950062CA60 /* TimerView.swift */; };
 		6EAE2334293151EB0062CA60 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE2333293151EB0062CA60 /* ProgressView.swift */; };
 		6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A02921757F00E4465E /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		5F4552B4A7B334C456044465 /* Pods_Workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E38DB4D293BD9B400927D41 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
+		6E3F9F34293E27800052856A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		6E3F9F37293E28050052856A /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 		6EAE233029314D950062CA60 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6EAE2333293151EB0062CA60 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		6EC0939D2921757F00E4465E /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +84,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3F9F32293E236F0052856A /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		6E3F9F33293E23790052856A /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				6E3F9F36293E27D40052856A /* Views */,
+				6E3F9F34293E27800052856A /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		6E3F9F36293E27D40052856A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E3F9F37293E28050052856A /* StatsItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6EAE232F29314D600062CA60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				6EAE2332293151C70062CA60 /* Timer */,
+				6E3F9F33293E23790052856A /* Stats */,
+				6E3F9F32293E236F0052856A /* Steps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,11 +428,13 @@
 				6EAE2334293151EB0062CA60 /* ProgressView.swift in Sources */,
 				6EDEBAAB292655A600AD0FA5 /* MainButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
+				6E3F9F38293E28050052856A /* StatsItemView.swift in Sources */,
 				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
 				6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */,
 				6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */,
 				6EEDA4F32927E70E000EFB97 /* BaseView.swift in Sources */,
 				6EEDA4F8292D0367000EFB97 /* WeekDayView.swift in Sources */,
+				6E3F9F35293E27800052856A /* StatsView.swift in Sources */,
 				6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */,
 				6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */,
 			);
