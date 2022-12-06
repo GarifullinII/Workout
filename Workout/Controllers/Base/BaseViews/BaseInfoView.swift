@@ -19,7 +19,7 @@ class BaseInfoView: BaseView {
     
     private let button = MainButton(with: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = Resources.Colors.separator.cgColor
