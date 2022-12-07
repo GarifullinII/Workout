@@ -8,10 +8,10 @@
 import UIKit
 
 final class StepsView: BaseInfoView {
-    private let barsView = UIView()
+    private let barsView = BarsView()
 
-    func configure(with items: [StatsItem]) {
-        barsView.backgroundColor = .red
+    func configure(with items: [BarView.Data]) {
+        barsView.configure(with: items)
     }
 }
 
@@ -26,10 +26,10 @@ extension StepsView {
         super.constraintsViews()
         
         NSLayoutConstraint.activate([
-            barsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
-            barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
-            barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+            barsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
+            barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15)
         ])
     }
     
