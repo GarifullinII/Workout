@@ -10,7 +10,7 @@ import UIKit
 class SessionController: BaseController {
     private let timerView = TimerView()
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats)
-    private let stepsView = BaseInfoView(with: Resources.Strings.Session.stepsCounter)
+    private let stepsView = StepsView(with: Resources.Strings.Session.stepsCounter)
     
     private let timerDuration = 5.0
     
@@ -92,5 +92,7 @@ extension SessionController {
                                    .totalSteps(value: "7,682"),
                                    .totalDistance(value: "8.25")
                                   ])
+        
+        stepsView.configure(with: [])
     }
 }

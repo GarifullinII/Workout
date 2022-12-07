@@ -10,6 +10,9 @@
 		6E38DB4E293BD9B400927D41 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E38DB4D293BD9B400927D41 /* PercentView.swift */; };
 		6E3F9F35293E27800052856A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F9F34293E27800052856A /* StatsView.swift */; };
 		6E3F9F38293E28050052856A /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F9F37293E28050052856A /* StatsItemView.swift */; };
+		6E9A849B2940F0310093D1B5 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A849A2940F0310093D1B5 /* StepsView.swift */; };
+		6E9A849E2940F2D90093D1B5 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A849D2940F2D90093D1B5 /* BarsView.swift */; };
+		6E9A84A12940F30C0093D1B5 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A84A02940F30C0093D1B5 /* BarView.swift */; };
 		6EAE233129314D950062CA60 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE233029314D950062CA60 /* TimerView.swift */; };
 		6EAE2334293151EB0062CA60 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE2333293151EB0062CA60 /* ProgressView.swift */; };
 		6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093A02921757F00E4465E /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 		6E38DB4D293BD9B400927D41 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		6E3F9F34293E27800052856A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		6E3F9F37293E28050052856A /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		6E9A849A2940F0310093D1B5 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		6E9A849D2940F2D90093D1B5 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		6E9A84A02940F30C0093D1B5 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		6EAE233029314D950062CA60 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6EAE2333293151EB0062CA60 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		6EC0939D2921757F00E4465E /* Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +93,7 @@
 		6E3F9F32293E236F0052856A /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				6E9A849A2940F0310093D1B5 /* StepsView.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -104,6 +111,23 @@
 			isa = PBXGroup;
 			children = (
 				6E3F9F37293E28050052856A /* StatsItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E9A849C2940F29E0093D1B5 /* BarsView */ = {
+			isa = PBXGroup;
+			children = (
+				6E9A849F2940F2F20093D1B5 /* Views */,
+				6E9A849D2940F2D90093D1B5 /* BarsView.swift */,
+			);
+			path = BarsView;
+			sourceTree = "<group>";
+		};
+		6E9A849F2940F2F20093D1B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E9A84A02940F30C0093D1B5 /* BarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +299,7 @@
 		6EFDBCCA292E91F200677A39 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				6E9A849C2940F29E0093D1B5 /* BarsView */,
 				6EEDA4F22927E70E000EFB97 /* BaseView.swift */,
 				6EFDBCCB292E921B00677A39 /* BaseInfoView.swift */,
 			);
@@ -425,10 +450,13 @@
 				6EDEBA802924ED6500AD0FA5 /* SessionController.swift in Sources */,
 				6EFDBCCC292E921B00677A39 /* BaseInfoView.swift in Sources */,
 				6EAE233129314D950062CA60 /* TimerView.swift in Sources */,
+				6E9A849E2940F2D90093D1B5 /* BarsView.swift in Sources */,
 				6EAE2334293151EB0062CA60 /* ProgressView.swift in Sources */,
+				6E9A849B2940F0310093D1B5 /* StepsView.swift in Sources */,
 				6EDEBAAB292655A600AD0FA5 /* MainButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
 				6E3F9F38293E28050052856A /* StatsItemView.swift in Sources */,
+				6E9A84A12940F30C0093D1B5 /* BarView.swift in Sources */,
 				6EDEBA7E2924ED3500AD0FA5 /* OverviewController.swift in Sources */,
 				6EC093A12921757F00E4465E /* AppDelegate.swift in Sources */,
 				6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */,
