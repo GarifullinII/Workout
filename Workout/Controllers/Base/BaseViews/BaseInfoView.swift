@@ -33,7 +33,7 @@ class BaseInfoView: BaseView {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         
-        button.setTilte(buttonTitle)
+        button.setTilte(buttonTitle?.uppercased())
         button.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
