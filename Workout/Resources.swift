@@ -72,6 +72,9 @@ enum Resources {
         enum Progress {
             static let navBarLeft = "Export"
             static let navBarRight = "Details"
+            
+            static let dailyPerformance = "Daily performance"
+            static let lastSevenDays = "Last 7 days"
         }
         
         enum Settings {}

@@ -12,7 +12,7 @@ class SessionController: BaseController {
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats)
     private let stepsView = StepsView(with: Resources.Strings.Session.stepsCounter)
     
-    private let timerDuration = 5.0
+    private let timerDuration = 60.0
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
