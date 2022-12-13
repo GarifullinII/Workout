@@ -75,6 +75,9 @@ enum Resources {
             
             static let dailyPerformance = "Daily performance"
             static let lastSevenDays = "Last 7 days"
+            
+            static let monthlyPerformance = "Monthly performance"
+            static let lastTenMonths = "Last 10 months"
         }
         
         enum Settings {}
