@@ -24,6 +24,8 @@
 		6EC093BD29228EFA00E4465E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC093BC29228EFA00E4465E /* Resources.swift */; };
 		6EC1F190294898BB0020EF41 /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F18F294898BB0020EF41 /* MonthlyPerformanceView.swift */; };
 		6EC1F19429489C920020EF41 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F19329489C920020EF41 /* ChartsView.swift */; };
+		6EC1F1962948A17F0020EF41 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F1952948A17F0020EF41 /* YAxisView.swift */; };
+		6EC1F1982948A5190020EF41 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F1972948A5190020EF41 /* XAxisView.swift */; };
 		6EC367CA2942326D00D4C95F /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC367C92942326D00D4C95F /* DailyPerformanceView.swift */; };
 		6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */; };
 		6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA73292407B600AD0FA5 /* BaseController.swift */; };
@@ -64,6 +66,8 @@
 		6EC093BC29228EFA00E4465E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		6EC1F18F294898BB0020EF41 /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
 		6EC1F19329489C920020EF41 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		6EC1F1952948A17F0020EF41 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
+		6EC1F1972948A5190020EF41 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		6EC367C92942326D00D4C95F /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
 		6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		6EDEBA73292407B600AD0FA5 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 		6EC1F19229489C620020EF41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6EC1F1952948A17F0020EF41 /* YAxisView.swift */,
+				6EC1F1972948A5190020EF41 /* XAxisView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -505,6 +511,8 @@
 				6EAE2334293151EB0062CA60 /* ProgressView.swift in Sources */,
 				6E9A849B2940F0310093D1B5 /* StepsView.swift in Sources */,
 				6EC1F19429489C920020EF41 /* ChartsView.swift in Sources */,
+				6EC1F1982948A5190020EF41 /* XAxisView.swift in Sources */,
+				6EC1F1962948A17F0020EF41 /* YAxisView.swift in Sources */,
 				6EDEBAAB292655A600AD0FA5 /* MainButton.swift in Sources */,
 				6EDEBA822924ED9B00AD0FA5 /* ProgressController.swift in Sources */,
 				6E3F9F38293E28050052856A /* StatsItemView.swift in Sources */,

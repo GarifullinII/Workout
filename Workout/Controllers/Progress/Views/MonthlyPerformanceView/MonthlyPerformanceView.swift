@@ -8,10 +8,10 @@
 import UIKit
 
 final class MonthlyPerformanceView: BaseInfoView {
-    private let chartsView = UIView()
+    private let chartsView = ChartsView()
 
-    func configure(with items: [BarView.Data]) {
-//        chartsView.configure(with: items)
+    func configure(with items: [ChartsView.Data]) {
+        chartsView.configure(with: items)
     }
 }
 
@@ -35,7 +35,5 @@ extension MonthlyPerformanceView {
     
     override func configureAppearance() {
         super.configureAppearance()
-        
-        chartsView.backgroundColor = .systemRed
     }
 }
