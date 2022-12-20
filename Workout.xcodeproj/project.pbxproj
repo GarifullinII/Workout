@@ -27,6 +27,7 @@
 		6EC1F1962948A17F0020EF41 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F1952948A17F0020EF41 /* YAxisView.swift */; };
 		6EC1F1982948A5190020EF41 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1F1972948A5190020EF41 /* XAxisView.swift */; };
 		6EC367CA2942326D00D4C95F /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC367C92942326D00D4C95F /* DailyPerformanceView.swift */; };
+		6ED34F8A29521B820014A77E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED34F8929521B810014A77E /* ChartView.swift */; };
 		6EDEBA70292404CB00AD0FA5 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */; };
 		6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA73292407B600AD0FA5 /* BaseController.swift */; };
 		6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEBA752924E98600AD0FA5 /* UIView+extensions.swift */; };
@@ -69,6 +70,7 @@
 		6EC1F1952948A17F0020EF41 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		6EC1F1972948A5190020EF41 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		6EC367C92942326D00D4C95F /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
+		6ED34F8929521B810014A77E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6EDEBA6F292404CB00AD0FA5 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		6EDEBA73292407B600AD0FA5 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		6EDEBA752924E98600AD0FA5 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				6EC1F1952948A17F0020EF41 /* YAxisView.swift */,
 				6EC1F1972948A5190020EF41 /* XAxisView.swift */,
+				6ED34F8929521B810014A77E /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				6EDEBA762924E98600AD0FA5 /* UIView+extensions.swift in Sources */,
 				6EEDA4F32927E70E000EFB97 /* BaseView.swift in Sources */,
 				6EEDA4F8292D0367000EFB97 /* WeekDayView.swift in Sources */,
+				6ED34F8A29521B820014A77E /* ChartView.swift in Sources */,
 				6E3F9F35293E27800052856A /* StatsView.swift in Sources */,
 				6EDEBA74292407B600AD0FA5 /* BaseController.swift in Sources */,
 				6EC093A32921757F00E4465E /* SceneDelegate.swift in Sources */,
