@@ -24,6 +24,7 @@ final class ChartView: BaseView {
     }()
     
     func configure(with data: [ChartsView.Data]) {
+        addDashLine(at: 100)
     }
 }
 
@@ -63,9 +64,15 @@ private extension ChartView {
         let startPoint = CGPoint(x: 0, y: yPosition)
         let endPoint = CGPoint(x: bounds.width, y: yPosition)
         
-        let dashLine = CAShapeLayer()
-        dashLine.strokeColor = Resources.Colors.separator.cgColor
-        dashLine.lineWidth = 1
-        dashLine.lineDashPattern = [6, 3]
+        let dashPath = CGMutablePath()
+        dashPath.addLines(between: [startPoint, endPoint])
+        
+        let dashLayer = CAShapeLayer()
+        dashLayer.path = dashPath
+        dashLayer.strokeColor = Resources.Colors.separator.cgColor
+        dashLayer.lineWidth = 1
+        dashLayer.lineDashPattern = [6, 3]
+        
+        layer.addSublayer(dashLayer)
     }
 }
