@@ -57,3 +57,15 @@ extension ChartView {
         backgroundColor = .clear
     }
 }
+
+private extension ChartView {
+    func addDashLine(at yPosition: CGFloat) {
+        let startPoint = CGPoint(x: 0, y: yPosition)
+        let endPoint = CGPoint(x: bounds.width, y: yPosition)
+        
+        let dashLine = CAShapeLayer()
+        dashLine.strokeColor = Resources.Colors.separator.cgColor
+        dashLine.lineWidth = 1
+        dashLine.lineDashPattern = [6, 3]
+    }
+}
